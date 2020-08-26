@@ -1,13 +1,12 @@
-![Banner](static/poweredBy01.jpg)
-[Smth.it](https://smth.it)
+[![Banner](static/poweredBy01.jpg)](https://smth.it)
 
 # mongoose-cursor
-<!-- [![npm version](https://img.shields.io/npm/v/moongoose-cursor.svg)](https://www.npmjs.com/package/moongoose-cursor) -->
+[![npm version](https://img.shields.io/npm/v/@smth-for/mongoose-cursor.svg)](https://www.npmjs.com/package/@smth-for/mongoose-cursor)
 <!-- [![Build Status](https://travis-ci.com/smth-for/moongoose-cursor.svg?branch=master)](https://travis-ci.com/smth-for/moongoose-cursor) -->
 [![Dependency Status](https://david-dm.org/smth-for/moongoose-cursor.svg)](https://david-dm.org/smth-for/moongoose-cursor)
 [![devDependency Status](https://david-dm.org/smth-for/moongoose-cursor/dev-status.svg)](https://david-dm.org/smth-for/moongoose-cursor#info=devDependencies)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/smth-for/moongoose-cursor/issues)
-<!-- [![Downloads](https://img.shields.io/npm/dm/moongoose-cursor.svg)](https://img.shields.io/npm/dm/moongoose-cursor.svg) -->
+[![Downloads](https://img.shields.io/npm/dm/@smth-for/mongoose-cursor.svg)](https://img.shields.io/npm/dm/@smth-for/mongoose-cursor.svg)
 [![HitCount](http://hits.dwyl.com/smth-for/moongoose-cursor.svg)](http://hits.dwyl.com/smth-for/moongoose-cursor)
 
 > A cursor based custom library for [Mongoose](http://mongoosejs.com) with customizable labels.
@@ -21,11 +20,8 @@ The below documentation is in progress. Feel free to contribute. :)
 
 ## Installation
 ```sh
-TODO
+npm install @smth-for/mongoose-cursor
 ```
-<!-- ```sh
-npm install moongoose-cursor
-``` -->
 
 ## Usage
 
@@ -46,7 +42,7 @@ const myModel = mongoose.model('SampleModel',  mySchema);
 myModel.cursor().then({}) // Usage
 ```
 
-### Model.paginate([query], [options], [callback])
+### Model.cursor([query], [options], [callback])
 
 Returns promise
 
@@ -99,7 +95,7 @@ const options = {
   }
 };
 
-Model.paginate({}, options, function(err, result) {
+Model.cursor({}, options, function(err, result) {
   // result.docs
   // result.totalDocs = 100
   // result.limit = 10
@@ -140,7 +136,7 @@ const options = {
   customLabels: myCustomLabels
 };
 
-Model.paginate({}, options, function(err, result) {
+Model.cursor({}, options, function(err, result) {
   // result.itemsList [here docs become itemsList]
   // result.meta.itemCount = 100 [here totalDocs becomes itemCount]
 });
@@ -149,7 +145,7 @@ Model.paginate({}, options, function(err, result) {
 With promise:
 
 ```js
-Model.paginate({}, { limit: 10 }).then(function(result) {
+Model.cursor({}, { limit: 10 }).then(function(result) {
   // ...
 });
 ```
@@ -166,7 +162,7 @@ var options = {
   limit:    10
 };
 
-Book.paginate(query, options).then(function(result) {
+Book.cursor(query, options).then(function(result) {
   // ...
 });
 ```
@@ -176,7 +172,7 @@ Book.paginate(query, options).then(function(result) {
 You can use `limit=0` to get only metadata:
 
 ```javascript
-Model.paginate({}, { limit: 0 }).then(function(result) {
+Model.cursor({}, { limit: 0 }).then(function(result) {
   // result.docs - empty array
   // result.totalDocs
   // result.limit - 0
@@ -190,7 +186,7 @@ config.js:
 ```javascript
 var mongoosePaginate = require('moongoose-cursor');
 
-mongoosePaginate.paginate.options = {
+mongoosePaginate.cursor.options = {
   lean:  true,
   limit: 20
 };
@@ -199,7 +195,7 @@ mongoosePaginate.paginate.options = {
 controller.js:
 
 ```javascript
-Model.paginate().then(function(result) {
+Model.cursor().then(function(result) {
   // result.docs - array of plain javascript objects
   // result.limit - 20
 });
@@ -213,7 +209,7 @@ const options = {
   pagination: false
 };
 
-Model.paginate({}, options, function(err, result) {
+Model.cursor({}, options, function(err, result) {
   // result.docs
   // result.totalDocs = 100
   // result.limit = 100
@@ -235,7 +231,7 @@ const options = {
   }
 };
     
-Model.paginate({}, options, function(err, result) {
+Model.cursor({}, options, function(err, result) {
  // Result
 });
 ```
@@ -261,7 +257,7 @@ const options = {
   forceCountFn: true
 };
     
-Model.paginate({}, options, function(err, result) {
+Model.cursor({}, options, function(err, result) {
  // Result
 });
 ```
