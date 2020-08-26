@@ -1,6 +1,6 @@
 {
   "name": "@smth-for/mongoose-cursor",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Cursor based custom library for Mongoose with customizable labels.",
   "main": "dist/index.js",
   "scripts": {
