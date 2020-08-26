@@ -1,7 +1,7 @@
 {
 	"name": "mongoose-cursor",
 	"version": "1.0.0",
-	"description": "A cursor based custom library for Mongoose with customizable labels.",
+	"description": "Cursor based custom library for Mongoose with customizable labels.",
 	"main": "dist/index.js",
 	"scripts": {
 		"pretest": "npm run build",

@@ -1,13 +1,14 @@
-![Banner](static/banner.jpg)
+![Banner](static/poweredBy01.jpg)
+[Smth.it](https://smth.it)
 
 # mongoose-cursor
-<!-- [![npm version](https://img.shields.io/npm/v/moongoose-cursor.svg)](https://www.npmjs.com/package/moongoose-cursor)
-[![Build Status](https://travis-ci.com/smth-for/moongoose-cursor.svg?branch=master)](https://travis-ci.com/smth-for/moongoose-cursor)
+<!-- [![npm version](https://img.shields.io/npm/v/moongoose-cursor.svg)](https://www.npmjs.com/package/moongoose-cursor) -->
+<!-- [![Build Status](https://travis-ci.com/smth-for/moongoose-cursor.svg?branch=master)](https://travis-ci.com/smth-for/moongoose-cursor) -->
 [![Dependency Status](https://david-dm.org/smth-for/moongoose-cursor.svg)](https://david-dm.org/smth-for/moongoose-cursor)
 [![devDependency Status](https://david-dm.org/smth-for/moongoose-cursor/dev-status.svg)](https://david-dm.org/smth-for/moongoose-cursor#info=devDependencies)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/smth-for/moongoose-cursor/issues)
-[![Downloads](https://img.shields.io/npm/dm/moongoose-cursor.svg)](https://img.shields.io/npm/dm/moongoose-cursor.svg)
-[![HitCount](http://hits.dwyl.io/smth-for/moongoose-cursor.svg)](http://hits.dwyl.io/smth-for/moongoose-cursor) -->
+<!-- [![Downloads](https://img.shields.io/npm/dm/moongoose-cursor.svg)](https://img.shields.io/npm/dm/moongoose-cursor.svg) -->
+[![HitCount](http://hits.dwyl.com/smth-for/moongoose-cursor.svg)](http://hits.dwyl.com/smth-for/moongoose-cursor)
 
 > A cursor based custom library for [Mongoose](http://mongoosejs.com) with customizable labels.
 
