@@ -1,4 +1,4 @@
-[![Banner](static/poweredBy01.jpg)](https://smth.it)
+[![Banner](static/moongooseCursor.jpg)](https://smth.it)
 
 # mongoose-cursor
 [![npm version](https://img.shields.io/npm/v/@smth-for/mongoose-cursor.svg)](https://www.npmjs.com/package/@smth-for/mongoose-cursor)
@@ -261,6 +261,9 @@ Model.cursor({}, options, function(err, result) {
  // Result
 });
 ```
+
+## Join SMTH Community
+![Discord Banner 2](https://discordapp.com/api/guilds/748546400631128204/widget.png?style=banner2)
 
 ## License
 
