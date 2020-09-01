@@ -160,15 +160,10 @@ function cursor(query, options, callback) {
       };
 
       let result = {};
-
-      if (typeof offset !== 'undefined') {
-        meta.offset = offset;
-        page = Math.ceil((offset + 1) / limit);
-      }
   
       // Setting default values
       meta[labelLimit] = limit;
-      meta[labelHasMore] = count === limit + 1;
+      meta[labelHasMore] = count >= limit + 1;
 
       // Remove customLabels set to false
       delete meta['false'];
