@@ -24,9 +24,7 @@ const defaultOptions = {
   customLabels: {
     totalDocs: 'totalDocs',
     limit: 'limit',
-
     docs: 'docs',
-
     hasMore: 'hasMore',
     startingAfter: 'startingAfter',
     endingBefore: 'endingBefore',
@@ -124,14 +122,12 @@ function cursor(query, options, callback) {
 
         if (sort[key] && sort[key] > 0) {
           sort[key] = -1;
-          reverse = true;
         }
       } else {
           mQuery[key] = { $gt: startingAfter };
 
         if (sort[key] && sort[key] <= 0) {
           sort[key] = 1;
-          reverse = true;
         }
       }
     }
