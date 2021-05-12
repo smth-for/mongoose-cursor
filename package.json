@@ -1,6 +1,6 @@
 {
   "name": "@smth-for/mongoose-cursor",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Cursor based custom library for Mongoose with customizable labels.",
   "main": "dist/index.js",
   "scripts": {
@@ -37,7 +37,6 @@
     "access": "public",
     "registry": "https://registry.npmjs.org"
   },
-  "dependencies": {},
   "devDependencies": {
     "@babel/cli": "^7.4.3",
     "@babel/core": "^7.4.3",
