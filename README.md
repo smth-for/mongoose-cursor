@@ -29,13 +29,13 @@ Add plugin to a schema and then use model `cursor` method:
 
 ```js
 const mongoose         = require('mongoose');
-const mongoosePaginate = require('moongoose-cursor');
+const moongooseCursor = require('moongoose-cursor');
 
 const mySchema = new mongoose.Schema({
   /* your schema definition */
 });
 
-mySchema.plugin(mongoosePaginate);
+mySchema.plugin(moongooseCursor);
 
 const myModel = mongoose.model('SampleModel',  mySchema);
 
